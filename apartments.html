@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аренда домов и квартир</title>
+    <title>Квартиры</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,21 +43,49 @@
         section {
             padding: 1rem;
         }
+
+        .property {
+            background: #fff;
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .property h3 {
+            margin: 0 0 0.5rem 0;
+        }
+
+        .property p {
+            margin: 0;
+            color: #333;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Добро пожаловать на наш сайт аренды недвижимости!</h1>
-        <p>Мы предлагаем широкий выбор квартир и домов для аренды, чтобы вы могли найти идеальное место для проживания.</p>
+        <h1>Квартиры</h1>
     </header>
     <nav>
+        <a href="index.html">Главная</a>
         <a href="about.html">О нас</a>
-        <a href="apartments.html">Квартиры</a>
         <a href="houses.html">Дома</a>
     </nav>
     <section>
-        <h2>Главная</h2>
-        <p>Ознакомьтесь с нашим предложением и найдите свой новый дом уже сегодня!</p>
+        <h2>Квартиры</h2>
+        <div class="property">
+            <h3>Квартира в центре города</h3>
+            <p>2 спальни, 1 ванная, $800 в месяц</p>
+        </div>
+        <div class="property">
+            <h3>Современная студия</h3>
+            <p>1 спальня, 1 ванная, $600 в месяц</p>
+        </div>
+        <div class="property">
+            <h3>Квартира с видом на парк</h3>
+            <p>3 спальни, 2 ванные, $1000 в месяц</p>
+        </div>
+        <!-- Add more apartments as needed -->
     </section>
 </body>
 </html>
