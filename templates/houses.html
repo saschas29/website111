@@ -67,9 +67,9 @@
         <h1>Дома</h1>
     </header>
     <nav>
-        <a href="index.html">Главная</a>
-        <a href="about.html">О нас</a>
-        <a href="apartments.html">Квартиры</a>
+        <a href="{{url_for('about')}}">О нас</a>
+        <a href="{{url_for('apartments')}}">Квартиры</a>
+        <a href="{{url_for('houses')}}">Дома</a>
     </nav>
     <section>
         <h2>Дома</h2>
@@ -84,6 +84,14 @@
         <div class="property">
             <h3>Дом с бассейном</h3>
             <p>4 спальни, 3 ванные, $2000 в месяц</p>
+        </div>
+        <div class="property">
+            <h3>Дом на берегу моря</h3>
+            <p>1 спальня, 1 ванная, $1250 в месяц</p>
+        </div>
+        <div class="property">
+            <h3>Семейны дом</h3>
+            <p>3 спальни, 2 ванные, $1400 в месяц</p>
         </div>
         <!-- Add more houses as needed -->
     </section>

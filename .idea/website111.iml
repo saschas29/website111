@@ -5,7 +5,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.ven" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.12 (website1112)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.12 (website111)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
