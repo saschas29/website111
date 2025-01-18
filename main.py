@@ -16,12 +16,24 @@ def about():
 
 @app.route("/apartments")
 def apartments():
-    return render_template("apartments.html")
+    conn = sqlite3.connect("database.sqlite")
+    cursor = conn.cursor()
+    cards = cursor.execute("SELECT * FROM flat").fetchall()
+    return render_template("apartments.html", cards=cards)
 
+@app.route("/info/<p_type>/<int:p_id>")
+def info(p_type, p_id):
+    conn = sqlite3.connect("database.sqlite")
+    cursor = conn.cursor()
+    cards = cursor.execute(f"SELECT * FROM '{p_type}' WHERE id LIKE '%{p_id}%'").fetchone()
+    return render_template("info.html", product=cards)
 
 @app.route("/houses")
 def houses():
-    return render_template("houses.html")
+    conn = sqlite3.connect("database.sqlite")
+    cursor = conn.cursor()
+    cards = cursor.execute("SELECT * FROM house").fetchall()
+    return render_template("houses.html", cards=cards)
 
 
 if __name__ == "__main__":

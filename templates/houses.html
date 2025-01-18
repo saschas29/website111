@@ -68,31 +68,18 @@
     </header>
     <nav>
         <a href="{{url_for('about')}}">О нас</a>
-        <a href="{{url_for('apartments')}}">Квартиры</a>
+        <a href="{{url_for('apartments')}}">Квартири</a>
         <a href="{{url_for('houses')}}">Дома</a>
     </nav>
     <section>
         <h2>Дома</h2>
-        <div class="property">
-            <h3>Семейный дом</h3>
-            <p>4 спальни, 2 ванные, $1500 в месяц</p>
-        </div>
-        <div class="property">
-            <h3>Коттедж</h3>
-            <p>3 спальни, 1 ванная, $1300 в месяц</p>
-        </div>
-        <div class="property">
-            <h3>Дом с бассейном</h3>
-            <p>4 спальни, 3 ванные, $2000 в месяц</p>
-        </div>
-        <div class="property">
-            <h3>Дом на берегу моря</h3>
-            <p>1 спальня, 1 ванная, $1250 в месяц</p>
-        </div>
-        <div class="property">
-            <h3>Семейны дом</h3>
-            <p>3 спальни, 2 ванные, $1400 в месяц</p>
-        </div>
+        {% for card in cards %}
+            <div class="property">
+                <h3>{{card[1]}}</h3>
+                <p>{{card[2]}}</p>
+                <a href="{{url_for('info',p_type='house', p_id=card[0])}}">Переглянути</a>
+            </div>
+        {% endfor %}
         <!-- Add more houses as needed -->
     </section>
 </body>

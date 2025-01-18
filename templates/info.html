@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Информация о квартире</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .info {
+            list-style-type: none;
+            padding: 0;
+            font-size: 16px;
+        }
+        .info li {
+            margin-bottom: 10px;
+        }
+        .info li span {
+            font-weight: bold;
+        }
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Информация о квартире</h1>
+    </header>
+
+    <div class="container">
+        <h1>{{product[1]}}</h1>
+        <p class="description">{{product[2]}}</p>
+
+        <ul class="info">
+            <li><span>Площадь:</span> {{product[5]}}</li>
+            <li><span>Ремонт:</span> Косметический</li>
+            <li><span>Балкон:</span> Есть</li>
+            <li><span>Состояние:</span> Хорошее</li>
+            <li><span>Цена:</span> {{product[3]}}</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Все права защищены</p>
+    </footer>
+</body>
+</html>
